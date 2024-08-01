@@ -16,7 +16,7 @@ namespace EjercicioAbstraccionJessicaAvila
 
         public abstract double AreaCuadrado();
 
-        public abstract double PerimentroCuadrado();
+        public abstract double Modulo();
 
         public abstract void Imprimir();
 

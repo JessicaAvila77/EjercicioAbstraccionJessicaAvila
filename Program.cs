@@ -10,6 +10,8 @@ namespace EjercicioAbstraccionJessicaAvila
     {
         static void Main(string[] args)
         {
+            // Instanciado la clase
+
             Operacion operacion = new Operacion();
 
             try
@@ -20,7 +22,18 @@ namespace EjercicioAbstraccionJessicaAvila
                 Console.Write("Ingrese el segundo numero para las operaciones:");
                 operacion.Numero2 = Convert.ToDouble(Console.ReadLine());
 
-                operacion.Imprimir();
+                if (operacion.Numero2 != 0)
+                {
+                    Console.WriteLine("");
+                    operacion.Imprimir();
+
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("El segundo numero no puede ser un 0 por una de las operaciones a realizar");
+                }
+               
 
 
             }
